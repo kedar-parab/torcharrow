@@ -24,7 +24,8 @@ requirements:
     - cffi
     - glog==0.4.0
     - libsodium
-    {{ environ.get('CONDA_PYTORCH_CONSTRAINT') }}
+    - pytorch
+    # {{ environ.get('CONDA_PYTORCH_CONSTRAINT') }}
 
 build:
   string: py{{py}}
@@ -32,8 +33,6 @@ build:
     - BUILD_VERSION
     - CPU_TARGET
 
-#GitHub Actions usually provide Mac without AVX2 support, for now just skip the test until Velox can be run without AVX2
-#pytest --no-header -v torcharrow/test
 test:
   imports:
     - torcharrow
