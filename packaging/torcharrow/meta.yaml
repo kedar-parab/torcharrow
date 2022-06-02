@@ -22,7 +22,7 @@ requirements:
     - pyarrow
     - arrow
     - cffi
-    - glog==0.4.0
+    - glog==0.6.0
     - libsodium
     - pytorch
     # {{ environ.get('CONDA_PYTORCH_CONSTRAINT') }}
