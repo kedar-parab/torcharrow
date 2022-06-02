@@ -12,10 +12,6 @@ requirements:
   host:
     - python
     - setuptools
-<<<<<<< HEAD
-=======
-    {{ environ.get('CONDA_PYTORCH_BUILD_CONSTRAINT') }}
->>>>>>> abfcc74 (update meta.yaml)
   run:
     - python
     - numpy
