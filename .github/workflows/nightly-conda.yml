@@ -122,7 +122,7 @@ jobs:
 
       - name: Install dependencies from Brew
         run: |
-          brew install --formula ninja cmake ccache icu4c boost gflags glog@0.4.0 libevent
+          brew install --formula ninja cmake ccache icu4c boost gflags glog libevent
 
       - name: Conda Build
         shell: bash -l {0}
